@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{83c7ba2b-8d56-4d5c-9b3b-adbcc0b8ca31}</ProjectGuid>
-    <RootNamespace>CplusplusSandbox</RootNamespace>
+    <ProjectGuid>{6bf27984-09b8-4098-89c8-d76aa90783b3}</ProjectGuid>
+    <RootNamespace>FactoryMethodDesignPattern</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Dijkstras_Algorithm</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,13 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Dijkstras_Algorithm.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="PriorityQueue.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Dijkstras_Algorithm.h" />
-    <ClInclude Include="PriorityQueue.h" />
+    <ClCompile Include="..\C_plus_plus_Sandbox\main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
