@@ -72,8 +72,9 @@ public:
 
     // Prints each node and total distance to
     // get there from stat node
-    void printShortestPath();
+    void printShortestPath(int nodeId);
 
+    void print(int key);
 
 
 

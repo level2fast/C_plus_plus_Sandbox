@@ -26,17 +26,34 @@ void Dijkstras::findShortestPath(Node* root)
 
 
 }
-void Dijkstras::printShortestPath()
+void Dijkstras::printShortestPath(int nodeId)
 {
 
 	for (auto const &x : previousNode)
 	{
-		cout << "(" << 0
-			 << "-->"
-			 << x.second << ")"
-			 << Node::path_weight[x.second]
-			 << endl;
+		cout << "Path (" << nodeId
+			<< "-->"
+			<< x.first << "): ";
+		print(x.first);
+		cout << endl;
 	}
+
+	//cout << previousNode[1] << 1;
+	//call print again recursively passing in previousNode[1];
+}
+void Dijkstras::print(int key)
+{
+	if (previousNode[key] == 0)
+	{
+		cout << previousNode[key] << "--" << key<< " ";
+		return;
+	}
+	else
+	{
+		print(previousNode[key]);
+		cout << previousNode[key] << "--" << key << " ";
+	}
+	
 }
 
 void Graph::printTree()

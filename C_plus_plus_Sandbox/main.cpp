@@ -109,13 +109,13 @@ int main()
     Algorithm.myPQ.push(graph.nodes[8]);
     
     // Let's take a look at our priority queue. Node Id 0 should be on top.
-    cout << endl  << "Algorithm.myPQ.top(): Node Id: " << Algorithm.myPQ.top().id << endl;
+    cout << endl << "Algorithm.myPQ.top(): Node Id: " << Algorithm.myPQ.top().id << endl << endl;
 
     // Now it's time to find the shortest path from start node to all
     // all other nodes in the graph!
 
     Algorithm.findShortestPath(&graph.nodes[0]);
-    Algorithm.printShortestPath();
+    Algorithm.printShortestPath(0);
 
     return 0;
 
